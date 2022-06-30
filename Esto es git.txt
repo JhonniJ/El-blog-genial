@@ -49,6 +49,7 @@ para salir de bin presiona esc+shit+zz
 para volver a una versión anterior usamos git reset (commit al que queremos volver) tenemos
 que especificar el tipo de reset, --soft suave volvemos a tras pero si tenemos algo en stagin, 
 un cambio agregado a la memoria pero no enviado al repositorio. --hard duro volvemos atras total sin posibilida de volver.
+elimina lo todos los demás commits
 git checkout "commit pasado" "archivo" -> volvemos a una versión anterior ya sea para verla
 o actualizarla
 
