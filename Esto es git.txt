@@ -8,7 +8,7 @@ Lineas de comandos, atajos para hacer funciones en la terminal:
 - git commit -m "mensaje" - > envia los ultimos cambios al repositorio, y "-m" añade un mensaje
 
 -git add . -> agrega todos los archivos de la carpeta al repositorio
--git commit -m "cambios" - >añades el mensaje al archivo que git detecta cambios
+-git commit "archivo"-m "cambios" - >añades el mensaje al archivo que git detecta cambios
 -git status -> muestra el estado del repositorio, si hay cambios que no hemos guardado nos informa
 -git show -> muestra todos los cambios historicos de un archivo, que cambios se hicieron
 -git log nombre de archivo -> historia completa del archivo
@@ -17,7 +17,7 @@ Lineas de comandos, atajos para hacer funciones en la terminal:
 
 
 _________
-Instalar git en windows es fácil, en el navegador buscamos git y descargamos, nos sercioramos de que este
+Instalar git en windows es fácil, en el navegador buscamos git y descargamos, nos sercioragimos de que este
 activada la opción gitbash y demás cositas curiosas
 para acceder a la terminal de git, busca gitbash en los archivos windowns
 
@@ -50,7 +50,7 @@ para volver a una versión anterior usamos git reset (commit al que queremos vol
 que especificar el tipo de reset, --soft suave volvemos a tras pero si tenemos algo en stagin, 
 un cambio agregado a la memoria pero no enviado al repositorio. --hard duro volvemos atras total sin posibilida de volver.
 git checkout "commit pasado" "archivo" -> volvemos a una versión anterior ya sea para verla
-o ac
+o actualizarla
 
 
 
