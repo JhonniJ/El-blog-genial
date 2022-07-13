@@ -1,27 +1,40 @@
 aquí vamos con git.
 git es un sistema de control de versiones
-guardo los cambios de un archivo en vez de guardar otro archivo
+guardo los cambios de un archivo en vez de guardar otro 
+archivo
 
-Lineas de comandos, atajos para hacer funciones en la terminal:
-- git init - > inicia el repositorio, base de datos donde se guardan los cambios
-- git add nombre del archivo - > agrega un archivo al repositorio
-- git commit -m "mensaje" - > envia los ultimos cambios al repositorio, y "-m" añade un mensaje
+Lineas de comandos, atajos para hacer funciones en la
+terminal:
+- git init - > inicia el repositorio, base de datos donde
+se guardan los cambios
+- git add nombre del archivo - > agrega un archivo al 
+repositorio
+- git commit -m "mensaje" - > envia los ultimos cambios
+al repositorio, y "-m" añade un mensaje
 
--git add . -> agrega todos los archivos de la carpeta al repositorio
--git commit "archivo"-m "cambios" - >añades el mensaje al archivo que git detecta cambios
--git status -> muestra el estado del repositorio, si hay cambios que no hemos guardado nos informa
--git show -> muestra todos los cambios historicos de un archivo, que cambios se hicieron
--git log nombre de archivo -> historia completa del archivo
+-git add . -> agrega todos los archivos de la carpeta al 
+repositorio
+-git commit "archivo"-m "cambios" - >añades el mensaje al 
+archivo que git detecta cambios
+-git status -> muestra el estado del repositorio, si hay
+cambios que no hemos guardado nos informa
+-git show -> muestra todos los cambios historicos de un
+archivo, que cambios se hicieron
+-git log nombre de archivo -> historia completa del
+archivo
 -git push -> envia nuestro respositorio ha otro
 -git pull -> recibe un archivo de otro repositorio
 
 
 _________
-Instalar git en windows es fácil, en el navegador buscamos git y descargamos, nos sercioragimos de que este
+Instalar git en windows es fácil, en el navegador buscamos
+git y descargamos, nos sercioragimos de que este
 activada la opción gitbash y demás cositas curiosas
-para acceder a la terminal de git, busca gitbash en los archivos windowns
+para acceder a la terminal de git, busca gitbash en los
+archivos windowns
 
-git permite el uso de archivo binario pero es tan preciso, lo mejor es usarlo en archivos de
+git permite el uso de archivo binario pero es tan preciso,
+lo mejor es usarlo en archivos de
 texto plano, este documento por ejemplo o codigo.
 
 _____________
@@ -29,28 +42,37 @@ lineas de comandos, esto es complicado
 pwd -> muestra donde estamos
 cd -> navegar carpetas
 ls -> lista los archivos de donde estamos
-ls -al -> lista los archivos con el argumento de también los ocultos
+ls -al -> lista los archivos con el argumento de también los
+ocultos
 clear -> limpia la consola también control L 
 rm nombre del archivo -> remover o eliminar
 mkdir nombre carpeta -> crea una carpeta
 touch nombre de archivo -> crea un archivo vacio
 cat nombre del archivo -> muestra el contenido del archivo
 history -> historial de comandos de hechos
-git diff "commit a" "commit b" -> comando que compara la version a con la b, la primera comparación debe ser la antigua
-git log --stat -> muestra la historia de los archivos con los cambios y con "q" salgo de la pantalla
+git diff "commit a" "commit b" -> comando que compara la version
+a con la b, la primera comparación debe ser la antigua
+git log --stat -> muestra la historia de los archivos con los
+cambios y con "q" salgo de la pantalla
 
 __
 Por defecto git requiere el nombre de usuario para mandar los commits 
-para solucionar esto entramos a git config --global (con doble guio se usa en palabras) user.name "nuestro nombre"
-cuando se nos olvida hacer o mandar un mensaje con el commit git nos abre una ventana llamada
+para solucionar esto entramos a git config --global (con doble guio
+se usa en palabras) user.name "nuestro nombre"
+cuando se nos olvida hacer o mandar un mensaje con el commit git
+nos abre una ventana llamada
 vin, que es una editor que permite agregar el mensaje
 para salir de bin presiona esc+shit+zz
 
-para volver a una versión anterior usamos git reset (commit al que queremos volver) tenemos
-que especificar el tipo de reset, --soft suave volvemos a tras pero si tenemos algo en stagin, 
-un cambio agregado a la memoria pero no enviado al repositorio. --hard duro volvemos atras total sin posibilida de volver.
+para volver a una versión anterior usamos git reset (commit al que
+queremos volver) tenemos
+que especificar el tipo de reset, --soft suave volvemos a tras pero
+si tenemos algo en stagin, 
+un cambio agregado a la memoria pero no enviado al repositorio.
+--hard duro volvemos atras total sin posibilida de volver.
 elimina lo todos los demás commits
-git checkout "commit pasado" "archivo" -> volvemos a una versión anterior ya sea para verla
+git checkout "commit pasado" "archivo" -> volvemos a una versión
+interior ya sea para verla
 o actualizarla
 
 
