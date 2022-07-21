@@ -95,8 +95,9 @@ al repositorio.
 --hard duro volvemos atras total sin posibilida de 
 volver. elimina lo todos los demás commits
 
-- git checkout "commit pasado" "archivo" -> volvemos a
-una versión interior ya sea para verla o actualizarla
+- git checkout "commit pasado" "nombre archivo"-> 
+volvemos a una versión interior ya sea para verla
+o actualizarla
 
 
 
