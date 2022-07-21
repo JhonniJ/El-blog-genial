@@ -1,0 +1,14 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    text-align: center;
+    font-family: monospace;
+}
+h1, h3{
+    color: red    ;
+    font-size: 2rem;
+}
+p, span {
+    font-size: 1.6rem;
+}
