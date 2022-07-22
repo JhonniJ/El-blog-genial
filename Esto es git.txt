@@ -133,6 +133,13 @@ al las que la rama principal no tiene acceso
 es decir es un versión alterna o un camino
 distinto en el desarrollo.
 
--git branch "nombre de la rama" -> creamos la rama
+-git branch "nombre de la rama" -> creamos la rama, 
+cuando ya tenemos ramas creadas y usamos 
+este comando sin el nombre nos muestra las ramas que 
+tenemos y donde estamos
+
 -git checkout "nombre de la rama" -> cambiamos entre
 ramas
+
+para fusionar ramas se hace un merge, este se
+debe de hacer desde la rama principal
