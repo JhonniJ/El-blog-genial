@@ -21,3 +21,7 @@ p, span {
     text-align: left;
     padding: 2rem;
 }
+header span{
+    color: deepskyblue;
+    font-size: 2rem;
+}
