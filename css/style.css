@@ -12,3 +12,12 @@ h1, h3{
 p, span {
     font-size: 1.6rem;
 }
+.container{
+    border:1rem gray solid;
+    width: 70rem;
+    margin: 1rem auto;
+}
+.card{
+    text-align: left;
+    padding: 2rem;
+}

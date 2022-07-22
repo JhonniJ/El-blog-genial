@@ -20,6 +20,9 @@ un archivo sin un mensaje, nos abre una ventana llamada
 vin, que es una editor que permite agregar el mensaje
 para salir de Vin presiona esc+shit+zz
 
+-git commit -am "mensaje" convina los dos comandos anteriores
+
+
 -git status -> muestra el estado del repositorio, si hay
 cambios que no hemos guardado nos informa
 
@@ -29,11 +32,6 @@ ventana se utiliza el control + Q
 
 -git log nombre de archivo -> historia completa del
 archivo
-
--git push -> envia nuestro respositorio ha otro
-
--git pull -> recibe un archivo de otro repositorio
-
 
 _____________
 Instalar git en windows es fácil, en el navegador buscamos
@@ -72,7 +70,9 @@ history -> historial de comandos de hechos
 
 git diff "commit a" "commit b" -> comando que compara 
 la version a con la b, la primera comparación debe 
-ser la antigua
+ser la antigua. además si tenemos un archivo en staging
+y hacemos git diff podemos ver los cambios que tenemos
+entre archivo agregado en stagin y el directorio
 
 git log --stat -> muestra la historia de los archivos
 con los cambios y con "q" salgo de la pantalla
@@ -99,5 +99,38 @@ volver. elimina lo todos los demás commits
 volvemos a una versión interior ya sea para verla
 o actualizarla
 
+_____________
+Para trabajar de manera colaborativa se requiere que haya
+un repositorio remoto donde va a estar el proyecto
+unificado, puede ser Github, Gitlab o nuestro
+propio servidor.
+para traer el proyecto a tu maquina no se usa git init
+se usa git clone url, es decir no vamos a iniciar un 
+proyectoen nuestra maquina, nos vamos a traer un proyecto
+del repositorio, este git clone traer todo todito tanto
+los archivio como el respositorio, la base de datos 
+atomica 
+-git push -> envia los cambios de nuestro respositorio 
+al repositorio remoto
 
+-git fetch -> trae los cambios o actualizaciones
+a nuestro repositorio pero no me lo copia a mis
+archivos
 
+-git merge -> fusiona los cambios traidos al repositorio
+con mis archivos o mi directorio
+
+-git pull -> combina los dos comandos anteriores
+
+_____________
+ramas en Git
+una rama en git es la linea de desarrollo, 
+son todos los registros historicos de cambios que
+hemos hecho en dicha versión. No es solo 
+eso ya que tambien podemos crear nuevas ramas
+independientes que son copias del ultimo commit
+al las que la rama principal no tiene acceso
+es decir es un versión alterna o un camino
+distinto en el desarrollo.
+
+-
