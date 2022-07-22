@@ -11,6 +11,7 @@ h1, h3{
 }
 p, span {
     font-size: 1.6rem;
+    color: black;
 }
 .container{
     border:1rem gray solid;
@@ -21,7 +22,15 @@ p, span {
     text-align: left;
     padding: 2rem;
 }
-header span{
+header{
+    margin: 2rem;
+}
+header {
+    font-size: 1.5rem;
     color: deepskyblue;
-    font-size: 2rem;
+    box-shadow: 0.5rem 0rem 3rem 0.1rem;
+}
+header b{
+    font-size: 2.4rem;
+    margin: 0 3rem;
 }
