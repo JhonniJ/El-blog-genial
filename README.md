@@ -1,2 +1,2 @@
 # El-blog-genial
-blog practica para plazit, nunca pares de apprender
+blog practica para plazit, nunca pares de aprender
