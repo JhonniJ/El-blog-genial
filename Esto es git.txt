@@ -126,11 +126,11 @@ _____________
 ramas en Git
 una rama en git es la linea de desarrollo, 
 son todos los registros historicos de cambios que
-hemos hecho en dicha versión. No es solo 
+hemos hecho en dich archivo. No es solo 
 eso ya que tambien podemos crear nuevas ramas
 independientes que son copias del ultimo commit
 al las que la rama principal no tiene acceso
-es decir es un versión alterna o un camino
+es decir es un versión alterna o un caminobranck
 distinto en el desarrollo.
 
 -git branch "nombre de la rama" -> creamos la rama, 
@@ -141,5 +141,9 @@ tenemos y donde estamos
 -git checkout "nombre de la rama" -> cambiamos entre
 ramas
 
-para fusionar ramas se hace un merge, este se
-debe de hacer desde la rama principal
+-git merge "nombre rama"para fusionar ramas se hace 
+un merge, este se debe de hacer desde la rama principal
+
+-para solucionar un conflicto simplemente debemos
+escoger el cambio que se aplicara y hacer un commit
+
