@@ -147,3 +147,60 @@ un merge, este se debe de hacer desde la rama principal
 -para solucionar un conflicto simplemente debemos
 escoger el cambio que se aplicara y hacer un commit
 
+_____________
+Github, superrepositorio remoto de git 
+para hacer uso nos resgistramos en Github
+
+creamos un repositorio en github para poder 
+enlazarlo con nuestro repositorio local
+
+buscamos la url del repositorio en github
+la copiamos con https para darle a git un 
+origen remoto de los archivos,
+-git remote add origin "url"
+
+-git remote -v --> nos muestra de manera verbal 
+los origenes remotos
+
+-git push origin master:main --> manda la rama master
+al origen y fusionala con el main de github
+
+/*github cambio el nombre de la rama principal de
+master a main por eso lo hacemos así*/
+
+antes de mandar nuestro repo al remoto es mejor 
+traernos los cambios que hayan ocurrido en remoto
+
+- git pull origin main --> nos traemos y fusionamos
+la rama main del origen, esto por primera vez sale 
+un error ya que lo de origen y lo nuestro son 
+historias distintas para solucionarlo hacemos:
+
+-git pull origin main --allow-unrelated-histories
+
+ahora si podemos hacer el push
+-git push origin master:main
+
+_____________
+cifrado asimetrico, llaves publicas y privadas
+son cifrado que vincula matematicamente la llaves
+la llave publica es el medio de como encripta la 
+información y la llave privada de descifra la 
+información 
+
+esto se usa para conectarnos de manera segura a 
+servidores, repositorios remotos
+
+el uso de esta llaves es para hacer más fuerte y
+sencilla el acceso a github, se hace conectandonos
+por el protocolo ssh, es decir le digo y le mando a 
+github la llave publica y a su vez github nos envia
+su llave publica
+
+las llaves ssh no nos por repositorios ni por 
+proyectos son por personas
+
+para crear las llaves ssh abrimos gitbash, nos aseguramos
+de estar de el home, es decir en la raiz del documento
+donde la virgulilla ~ y escribimos el siguiente comando
+ssh-keygen -t rsa -b 4096 -C "j.j.avila.fig@gmail.com"
