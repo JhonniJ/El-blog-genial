@@ -204,3 +204,23 @@ para crear las llaves ssh abrimos gitbash, nos aseguramos
 de estar de el home, es decir en la raiz del documento
 donde la virgulilla ~ y escribimos el siguiente comando
 ssh-keygen -t rsa -b 4096 -C "j.j.avila.fig@gmail.com"
+
+se requiere revisar si el servidor de llaves ssh 
+esta corriendo, un programa que comprueba las conexiones
+- eval $(ssh-agent -s)
+esto nos genera la siguiente respuesta: "agent pid numero"
+es decir el agente esta corriendo o esta en ejecución
+
+ademas hay que decirle al entorno que la llave exista
+es decir agregarla a la entorno
+-ssh-add ~/.ssh id_rsa
+
+despues de haber creado y añadido la llave hay que 
+añardirla a github, en github abrimos configuraciones y en
+la opción de llave ssh la seleccionamos le ponemos un 
+titulo que es para decir a que equipo esta asociado, cada pc 
+que tengas debe contar con su propia llave publica  y privada.
+en el espacio de abajos pegamos la llave publica, copiamos su
+contenido
+
+en git tenemos que cambiar la url del origen
