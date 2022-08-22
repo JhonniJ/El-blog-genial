@@ -223,4 +223,36 @@ que tengas debe contar con su propia llave publica  y privada.
 en el espacio de abajos pegamos la llave publica, copiamos su
 contenido
 
-en git tenemos que cambiar la url del origen
+en git tenemos que cambiar la url del origen esto se hace con
+-git remote -v para ver que url remotas tenemos
+para cambiarlo se hace con:
+git remote set-url origin (url)
+
+_____________
+comando especial para ver la historia del proyecto de manera total,
+grafica y decorada
+-git log --all --graph --decorate --oneline
+hay un truco llamado alias, son crear variables
+alias (nombre)="git log --all --graph --decorate --oneline"
+
+un tag que puede ser v0.1 es una forma de nombrar versiones
+es decir agregar una tarjeta a una parte importante del 
+proyecto
+para agregar un tag necesitamos el hash del commit que comando
+anterio podemos obtener la versión corta
+-git tag -a (v0.1) -m "mensaje" (hash)
+para poder ver cuales tags tenemos podemos usar el comando git tag
+
+para ver que commit hace referencia un tag se usamos
+-git show-ref --tags
+
+_____________
+lo divertido de los tags esta en publicarlos, para hacer esto
+se usa el comando
+-git push origin --tags -> es decir empujar al origen los tags
+-git tag -d "nombre del tag a eliminar" -> elimina el tag
+en local para eliminarlo en github se usa:
+-git push origin :refs/tags/"nombre tag a eliminar"
+
+para enviar diferentes ramas se usa
+-git push origin "nombre de la rama"
