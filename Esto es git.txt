@@ -256,3 +256,15 @@ en local para eliminarlo en github se usa:
 
 para enviar diferentes ramas se usa
 -git push origin "nombre de la rama"
+
+_____________
+un fork es un nuevo camino del desarrollo pero como si fuera otro
+repositorio como colaborador, es decir no puede hacer merge ni commits
+en el principal sin embargo puede clonarlo y hacer su propia versión
+que es el fork que viene de tenedor y es otro camino, usa bifurcación.
+
+para ser colaborador en un proyecto se le da una estrellita, un
+visualización y se le da en fork, que hace un clon del proyecto 
+publico 
+en la terminal nos ubicamos en donde queramos trabajar el proyecto
+escribimos git clone y agr
