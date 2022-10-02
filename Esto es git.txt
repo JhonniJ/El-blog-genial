@@ -265,6 +265,17 @@ que es el fork que viene de tenedor y es otro camino, usa bifurcación.
 
 para ser colaborador en un proyecto se le da una estrellita, un
 visualización y se le da en fork, que hace un clon del proyecto 
-publico 
+publico en nuestra pagina de github
 en la terminal nos ubicamos en donde queramos trabajar el proyecto
-escribimos git clone y agr
+escribimos git clone y agregamos la dirección o la llave ssh
+
+se puede hace un pull reques, que es como un mensaje para el 
+proyecto original, cuando le das close es como deje así, o seguir 
+comentando.
+
+a medida que el original cambia el fork nse queda a tras, para actualizar
+hay que traer los cambios, para hacer esto creamos otra rama
+vamos al proyecto original en github y copiamos la ruta, abrimos la
+consola escribimos git remote add upstream (el nombre es opcional
+pero es común llamarlo así) y pegamos la url y al final hacemos un
+git pull
