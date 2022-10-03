@@ -223,4 +223,59 @@ que tengas debe contar con su propia llave publica  y privada.
 en el espacio de abajos pegamos la llave publica, copiamos su
 contenido
 
-en git tenemos que cambiar la url del origen
+en git tenemos que cambiar la url del origen esto se hace con
+-git remote -v para ver que url remotas tenemos
+para cambiarlo se hace con:
+git remote set-url origin (url)
+
+_____________
+comando especial para ver la historia del proyecto de manera total,
+grafica y decorada
+-git log --all --graph --decorate --oneline
+hay un truco llamado alias, son crear variables
+alias (nombre)="git log --all --graph --decorate --oneline"
+
+un tag que puede ser v0.1 es una forma de nombrar versiones
+es decir agregar una tarjeta a una parte importante del 
+proyecto
+para agregar un tag necesitamos el hash del commit que comando
+anterio podemos obtener la versión corta
+-git tag -a (v0.1) -m "mensaje" (hash)
+para poder ver cuales tags tenemos podemos usar el comando git tag
+
+para ver que commit hace referencia un tag se usamos
+-git show-ref --tags
+
+_____________
+lo divertido de los tags esta en publicarlos, para hacer esto
+se usa el comando
+-git push origin --tags -> es decir empujar al origen los tags
+-git tag -d "nombre del tag a eliminar" -> elimina el tag
+en local para eliminarlo en github se usa:
+-git push origin :refs/tags/"nombre tag a eliminar"
+
+para enviar diferentes ramas se usa
+-git push origin "nombre de la rama"
+
+_____________
+un fork es un nuevo camino del desarrollo pero como si fuera otro
+repositorio como colaborador, es decir no puede hacer merge ni commits
+en el principal sin embargo puede clonarlo y hacer su propia versión
+que es el fork que viene de tenedor y es otro camino, usa bifurcación.
+
+para ser colaborador en un proyecto se le da una estrellita, un
+visualización y se le da en fork, que hace un clon del proyecto 
+publico en nuestra pagina de github
+en la terminal nos ubicamos en donde queramos trabajar el proyecto
+escribimos git clone y agregamos la dirección o la llave ssh
+
+se puede hace un pull reques, que es como un mensaje para el 
+proyecto original, cuando le das close es como deje así, o seguir 
+comentando.
+
+a medida que el original cambia el fork nse queda a tras, para actualizar
+hay que traer los cambios, para hacer esto creamos otra rama
+vamos al proyecto original en github y copiamos la ruta, abrimos la
+consola escribimos git remote add upstream (el nombre es opcional
+pero es común llamarlo así) y pegamos la url y al final hacemos un
+git pull
