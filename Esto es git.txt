@@ -269,13 +269,17 @@ publico en nuestra pagina de github
 en la terminal nos ubicamos en donde queramos trabajar el proyecto
 escribimos git clone y agregamos la dirección o la llave ssh
 
-se puede hace un pull reques, que es como un mensaje para el 
+se puede hace un pull request, que es como un mensaje para el 
 proyecto original, cuando le das close es como deje así, o seguir 
 comentando.
 
-a medida que el original cambia el fork nse queda a tras, para actualizar
-hay que traer los cambios, para hacer esto creamos otra rama
-vamos al proyecto original en github y copiamos la ruta, abrimos la
-consola escribimos git remote add upstream (el nombre es opcional
-pero es común llamarlo así) y pegamos la url y al final hacemos un
-git pull
+a medida que el original cambia el fork se queda a tras, para actualizar
+hay que traer los cambios, para hacer esto creamos otra rama (para hacer
+pull) vamos al proyecto original en github y copiamos la ruta,
+abrimos la consola escribimos:
+-git remote add upstream (el nombre es opcional pero es común
+ llamarlo así) y pegamos la url y al final hacemos un git pull
+
+_____________
+un deployment tener en un servidor web git y traer los archivos
+obvio hay que clonar, hacer git pull, pero en escen
