@@ -282,4 +282,9 @@ abrimos la consola escribimos:
 
 _____________
 un deployment tener en un servidor web git y traer los archivos
-obvio hay que clonar, hacer git pull, pero en escen
+obvio hay que clonar, hacer git pull, pero en escencia es lo mismo
+
+_____________
+-.gitignore - es un archivo que guarda lista de archivos que el 
+sistema no deberia de trackear, cosas como las imagenes, las databases
+y las contraseñas
