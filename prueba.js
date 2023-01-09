@@ -4,6 +4,6 @@ var boton =document.getElementById("boton");
 boton.addEventListener("click", enviar);
 console.log("el boton" +boton +"la caja"+ caja);
 function enviar(){
-    alert("NO teman porque ya estoy aquí"+ caja.value);
+    alert("No teman porque ya estoy aquí: "+ caja.value);
 };
 
