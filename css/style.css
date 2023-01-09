@@ -24,6 +24,7 @@ p, span {
     border: 0.5rem gray solid;
     margin: 1rem auto;
 }
+
 .card{
     text-align: left;
     padding: 2rem;
@@ -54,12 +55,25 @@ header b{
 
 .footer__list{
     padding: 0.5rem;
-    
 }
 .list-item{
     font-size: 1.8rem;
+    display: inline-block;
+    margin: 0 2rem;
 }
 
+.list-item::after{
+    content:'|';
+}
 .footer_titulo-claro{
     color:var(--color_claro);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--color_secundary);
+    font-size: 2rem;
 }
