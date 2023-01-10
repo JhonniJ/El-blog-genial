@@ -56,24 +56,25 @@ header b{
 .footer__list{
     padding: 0.5rem;
 }
-.list-item{
+.nav-list-item{
     font-size: 1.8rem;
     display: inline-block;
     margin: 0 2rem;
 }
 
-.list-item::after{
+.nav-link::after{
     content:'|';
 }
 .footer_titulo-claro{
     color:var(--color_claro);
 }
 
-a{
+.nav-link{
     text-decoration: none;
 }
 
-a:hover{
+.nav-link:hover{
+    content: '|';
     color:var(--color_secundary);
     font-size: 2rem;
 }

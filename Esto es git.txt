@@ -104,9 +104,9 @@ Para trabajar de manera colaborativa se requiere que haya
 un repositorio remoto donde va a estar el proyecto
 unificado, puede ser Github, Gitlab o nuestro
 propio servidor.
-para traer el proyecto a tu maquina no se usa git init
+para traer el proyecto a tu maquina no se usa git init,
 se usa git clone url, es decir no vamos a iniciar un 
-proyectoen nuestra maquina, nos vamos a traer un proyecto
+proyecto en nuestra maquina, nos vamos a traer un proyecto
 del repositorio, este git clone traer todo todito tanto
 los archivio como el respositorio, la base de datos 
 atomica 
