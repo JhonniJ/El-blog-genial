@@ -10,41 +10,77 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <b>Git master </b>la guia que necesitabas para dominar el mundo remoto
+        <div class="card">
+            <h1 class="titulo">
+                <b>Git master, </b>
+                la guia que necesitabas para dominar el mundo remoto
+            </h1>
             
-        </header>
-        <p>este es un poco de texto para hacer espacio,
-            no tiene contenido es solo Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Veritatis
-            possimus voluptatem hic recusandae tenetur,
-            autem minima commodi accusantium officiis velit
-            aspernatur molestiae nesciunt eaque in rerum,
-            fugiat repudiandae sequi facilis?</p>
+            <p>Seguro te preguntas ¿qué es git? y ¿porqué deberia aprenderlo?, bueno para ser
+                simples git es un sistema que te permite almacenar los cambios del proyecto
+                con detalles y la posibilidad de volver a versiones anteriores, esto es lo que
+                se conoce como <b>sistema de control de versiones.</b>
 
-        <div class="card"> 
-            <h1>Experimentos raros con Git</h1>
+                Para comenzar en el mundo de git hay 2 formas de trabajar con el, la forma local y la forma remota,
+                git es una tecnologia que trabaja de forma nativa pero también hay servicios como
+                github o gitlab que usando servidores en la nube permiten trabajar de forma remota. <br> <br>
+                En esta ocación vamos a trabajar de forma local
+            </p>
+        </div>
+
+        <div class="card card-1"> 
+            <h2 class="subtitulo">Preparación</h2>
+            <p>Antes de trabajar con git hay que instalarlo, para hacerlo nos dirijimos a la página oficial <b>https://git-scm.com/</b>
+                en ella encontraremos la opción descargar que por suerte la página entendera si somos de windows o mac,
+                una vez hecho esto solo lo instalamos pero tenemos que estar pendiente de activar 2 cosas fundamentales,
+                la primera, la interfaz de gitbash, es una consola especial y la segunda que esta vinculada con esta es 
+                el guardado avanzado, esto lo que permite es usar los comandos tanto de windows como mac sin inconvenientes
+                 
+            </p>
             
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum iusto 
-                eaque delectus aliquam, vitae doloremque nobis ducimus cupiditate facere eius. 
-                Repudiandae saepe mollitia, veniam illo soluta beatae ut doloremque!
-            Ab corporis voluptatum ullam reprehenderit. Quo ullam impedit nisi recusandae veniam 
-            quisquam officiis libero voluptates quos unde temporibus doloremque illo et culpa harum 
-            voluptatem, nam deserunt voluptatum excepturi ex sunt?
-            Modi, eum? Vel beatae pariatur enim laborum ex cupiditate, sit aperiam voluptas corrupti
-             exercitationem, id quia, veritatis magni provident consectetur tempore. Placeat ullam veritatis
-              numquam voluptatibus accusantium ut aliquam suscipit.
+        </div>
+        <div class="card card-2">
+            <h2 class="subtitulo">Dominando la consola</h2> 
+            <p>Estamos casi listos para comenzar, puede parecer mucho o muy complicado pero tranquilo
+                no es tan dificil y nada que valga la pena es fácil, en esta parte vamos a ver comandos para navegar
+                en la linea de comandos de git, el tan afamado y nuestro nueva compañero, <b>Gitbash</b>
+
+<               b> Comandos para moverse </b> <br>
+                - pwd - > muestra en donde Estamos <br>
+                - cd - > navegar entre carpetas <br>
+                - ls - > muestra los archivos <br>
+                
             </p>
-            <p>
-                Suena bastante exagerado, lo es un poco, ya
-                que el poder trabajar casi en simultaneo
-                con el mismo documento que dentro son 
-                diferentes
-            </p>
-            <p>
-                Parrafo para traer los cambios de remoto
-                a local
-            </p>
+            
+                <table class="tabla">
+                    <tr>
+                        <th class="tabla__celda">Moverse</th>
+            
+                    </tr>
+                    <tr class="tabla__columna">
+                        
+                        <td class="tabla__celda">
+                            pwd
+                        </td>
+                        <td class="tabla__celda">
+                            -> muestra en donde estamos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tabla__celda">cd</td>
+                        <td class="tabla__celda">-> Navegar entre carpetas</td>
+                    </tr>
+                    <tr>
+
+                        <td class="tabla__celda">ls</td>
+                        <td class="tabla__celda">-> Muestra los archivos</td>
+                    </tr>
+
+                </table>
+            
+            
+
+            
         </div>
     
         <h3>cosas raras del brayan</h3>
@@ -61,13 +97,13 @@
                 <li class="nav-list-item"><a class="nav-link" href="#">Nosotros</a></li>
             </ul>
             <hr>
-            <p class="footer__parrafo">
+            <span class="footer__parrafo">
                 proyecto serio para web. <br>
                 Autor: Jhonatan J. Avila. <br>
                 Un joven programador dando sus primeros pasos. <br>
                 Desde algún lugar de z <br>
                 30/12/2022 - /2023.
-            </p>
+            </span>
            
         </footer>
     </div>

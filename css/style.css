@@ -1,8 +1,9 @@
 :root{
-    --color_primary: deepskyblue;
+    --color_primary: rgb(0, 174, 255);
     --color_secundary: rgb(255, 0, 43) ;
-    --oscurito: rgb(158, 176, 201);
-    --color_claro:rgb(183, 233, 233);
+    --oscurito: rgb(157, 152, 163);
+    --color_claro:rgb(136, 224, 224);
+    --color_base: rgb(240, 198, 240);
     
 }
 html{
@@ -10,42 +11,52 @@ html{
 }
 body{
     text-align: center;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1, h3{
+.subtitulo{
     color: var(--color_secundary);
-    font-size: 2rem;
+    font-size: 3rem;
 }
-p, span {
-    font-size: 1.6rem;
-    
+
+p{
+    font-size: 2rem;
 }
 .container{
     border: 0.5rem gray solid;
-    margin: 1rem auto;
+    margin: 0.5rem;
 }
 
 .card{
     text-align: left;
-    padding: 2rem;
-}
-header{
-    margin: 2rem;
-}
-header {
-    font-size: 1.5rem;
-    color: var(--color_primary);
-    box-shadow: 0.5rem 0rem 3rem 0.1rem;
-}
-header b{
-    font-size: 2.4rem;
-    margin: 0 3rem;
+    padding: 0.5rem 2rem;
 }
 
+.card-1{
+    background-color: var(--color_base)
+}
+.titulo {
+    font-size: 2rem;
+    color: var(--color_primary);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0rem 3rem 0.1rem;
+    margin: 3rem;
+    text-align: center;
+}
+.titulo b{
+    font-size: 3rem;
+}
+.tabla{
+    background-color: var(--color_primary);
+    font-size: 2rem;
+}
+.tabla__celda{
+    border: 0.4rem var(--oscurito) solid;
+}
 
 .footer{
     background-color: var(--oscurito);
-    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
 }
 
 .footer__titulo{
